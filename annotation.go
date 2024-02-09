@@ -1,7 +1,6 @@
 package geneann
 
 import (
-	"fmt"
 	"slices"
 	"strconv"
 	"strings"
@@ -171,8 +170,6 @@ func (annotate *Annotate) Annotate(location *dna.Location) (*GeneAnnotation, err
 
 		ids = append(ids, dids...)
 	}
-
-	fmt.Printf("within d %d", len(ids))
 
 	geneSymbols := []string{}
 
